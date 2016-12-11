@@ -27,10 +27,10 @@ class ProductsController extends Controller
      */
     public function create()
     {
+        
         $groups = Groups::all();
         $categories = Categories::all();
         return view('products.create', compact('groups','categories'));
-
     }
 
     /**
